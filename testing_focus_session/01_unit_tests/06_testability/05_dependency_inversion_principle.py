@@ -16,7 +16,7 @@ class CampaignExtractor(object):
 class Parser(object):
     def __init__(self, file_path, name_extractor=None):
         self.file_path = file_path
-        self.name_extractor = name_extractor or NameExtractor('a', 'v')
+        self.name_extractor = name_extractor or NameExtractor()
         self.campaign_extractor = CampaignExtractor()
 
     def extract_name(self, body):
