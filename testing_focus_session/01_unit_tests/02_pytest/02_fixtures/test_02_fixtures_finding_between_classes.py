@@ -11,6 +11,7 @@ class TestWorker(object):
     def test_something(self, tested):
         assert isinstance(tested, Worker)
 
+
 class TestFastWorker(object):
     @fixture
     def tested(self):

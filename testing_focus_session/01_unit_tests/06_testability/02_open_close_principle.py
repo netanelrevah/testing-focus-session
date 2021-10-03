@@ -1,5 +1,8 @@
 """
-- every add of extractor will broke tests of parser
+- Software entities should be open for extension, but closed for modification.
+- Be able to add new functionality without changing existing code.
+
+- When adding new extractors test will be broken
 """
 
 

@@ -1,4 +1,6 @@
 """
+- Many client-specific interfaces are better than one general-purpose interface
+
 - Tests of subclasses can be broken if the interfaces will be changes
 """
 

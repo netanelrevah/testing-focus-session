@@ -1,3 +1,4 @@
+import pytest
 
 
 @pytest.mark.skip(reason="no way of currently testing this")
@@ -11,7 +12,7 @@ def test_1():
 
 
 @pytest.mark.skipif(
-    "sys.version_info < (3,8)", reason="requires python3.8 or higher"
+    "sys.version_info > (2,7)", reason="requires python2.7 or lower"
 )
 def test_2(): pass
 

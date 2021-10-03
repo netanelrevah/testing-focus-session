@@ -13,8 +13,8 @@ def test_f2():  # XFAIL but not really run test
     assert False
 
 
-@pytest.mark.xfail("sys.version_info.major == 2")
-def test_f3():  # XFAIL only on python 2
+@pytest.mark.xfail("sys.version_info.major == 3")
+def test_f3():  # XFAIL only on python 3
     assert False
 
 
@@ -29,10 +29,10 @@ def test_f5():  # XPASS (unexpectedly passed) but ignored
 
 
 @pytest.mark.xfail(strict=True)
-def test_f6():  # Test will fail and not ignored
+def test_f6():  # Test will fail and not ignored (shouldn't pass)
     assert True
 
 
 def test_f7():  # XFAIL only from specific test flow
-    if sys.version_info.major < 3:
+    if sys.version_info.major >= 3:
         pytest.xfail("reason")

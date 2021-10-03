@@ -1,4 +1,6 @@
-from code_resources import TestClassBase, Worker
+from tstcls import TestClassBase
+
+from code_resources import Worker
 
 
 class TestNothing(TestClassBase):

@@ -2,8 +2,9 @@
 Too Short Assertion
 """
 from mock import Mock
+from tstcls import TestClassBase
 
-from code_resources import TestClassBase, Worker
+from code_resources import Worker
 
 
 class TestSomeClass(TestClassBase):

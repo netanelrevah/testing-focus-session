@@ -8,7 +8,7 @@ def generic_fibonacci(index, op):
         return index
 
     before_two, before_one = 0, 1
-    for i in xrange(index - 1):
+    for _ in range(index - 1):
         before_two, before_one = before_one, op(before_two, before_one)
     return before_one
 

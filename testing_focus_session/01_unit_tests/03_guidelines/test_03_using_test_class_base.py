@@ -4,8 +4,9 @@ Using TestClassBase
 
 from mock import Mock
 from pytest import raises
+from tstcls import TestClassBase
 
-from code_resources import TestClassBase, Worker
+from code_resources import Worker
 
 
 class TestWorker(TestClassBase):

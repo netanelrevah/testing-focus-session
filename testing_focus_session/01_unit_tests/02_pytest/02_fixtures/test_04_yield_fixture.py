@@ -20,6 +20,6 @@ def make_worker():
 
 
 def test_customer_records(make_worker):
-    make_worker("Noa")
-    make_worker("Omri")
-    make_worker("Assaf")
+    make_worker("Apple")
+    make_worker("Orange")
+    make_worker("Banana")

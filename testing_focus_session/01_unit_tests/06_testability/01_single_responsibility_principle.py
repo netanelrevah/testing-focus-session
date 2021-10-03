@@ -1,5 +1,5 @@
 """
-- How to test parse?
+- A class should have only a single responsibility.
 """
 
 
@@ -32,6 +32,6 @@ class CampaignExtractor(object):
     pass
 
 
-class SrpParser(object):
+class SingleResponsibilityParser(object):
     def __init__(self, file_path, extractors):
         pass

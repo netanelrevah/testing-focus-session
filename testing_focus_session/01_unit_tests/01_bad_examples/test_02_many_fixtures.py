@@ -3,7 +3,7 @@ Fixtures Mess
 * fixture can have hidden logic
 * arrangement is less understandable
 """
-from code_resources import TestClassBase
+from tstcls import TestClassBase
 
 
 class TestSomeClass(TestClassBase):

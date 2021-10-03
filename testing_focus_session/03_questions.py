@@ -9,5 +9,4 @@
 
 # Thank You!
 
-# netanel@singular.net
-
+# netanel@dazz.io

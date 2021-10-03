@@ -6,13 +6,13 @@ import os
 
 
 def test_generate_random_a(monkeypatch):
-    monkeypatch.setattr(Random, 'today', Mock())
+    monkeypatch.setattr(Random, 'generate', Mock())
 
 
 def test_generate_random_b(monkeypatch):
     monkeypatch.setattr('randoms.Random.generate', Mock())
 
 
-def test_generate_random_d(monkeypatch):
+def test_generate_random_c(monkeypatch):
     monkeypatch.setenv('WAIT_FOR_IT', 'legen', prepend=':')
     assert os.environ['WAIT_FOR_IT'] == 'legen:dary'
