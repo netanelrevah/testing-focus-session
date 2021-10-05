@@ -2,9 +2,9 @@ Testing Focus Session
 =====================
 ## Agenda
 1. Unit-Tests
-    1. Guidelines
-    2. Bad Examples
-    3. Pytest
+    1. Bad Examples
+    2. Pytest
+    3. Guidelines
     4. TestClassBase
     5. Mock
     6. Monkeypatch
